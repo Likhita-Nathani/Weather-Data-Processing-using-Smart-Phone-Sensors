@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* version no. [v.2015.06.23.01.print_article.css] 09:16 AM Fonts.com */
+/* v.2014.06.29.01.print_article.css 01:00 PM */
+#left_column, #container .search_container, .hindawi_links ul, .open_access a, .open_access img {
+	display:none !important;
+}
+#container {
+width: 1022px;
+}
+#container .middle_content {
+	max-width: 100% !important;
+	width: 100% !important;
+	padding: 0px 0px 0px 0px !important;
+}
+#site_head {
+	background-color: transparent !important;
+    background-image: none !important;
+    height: 64px;
+    position: relative;
+    text-align: right !important;
+}
+#site_head:before {
+	content: url("../images/slogan_bg.gif");
+}
+#container .slogan {
+    color: transparent;
+	text-shadow:0px 0px 0px #DADADA;
+	filter: dropshadow(color=#DADADA, offx=0, offy=0);
+    font-family: 'Myriad W08 Bold_1166607';
+    font-size: 22px;
+    line-height: 65px;
+    position: absolute;
+    top: 0;
+	-webkit-print-color-adjust: exact !important;
+}
+#container .slogan {
+    (-bracket-:hack;
+        color: #DADADA;
+    );
+}
+#banner {
+background-image: none !important;
+}
+#banner img {
+display: block !important;
+width: 1022px !important;
+height: auto !important;
+position: relative !important;
+}
+#container p.banner_title {
+	color: transparent;
+	*color: #FFFFFF;
+	color: #FFFFFF\0/;
+	text-shadow:0px 0px 0px #ffffff;
+	filter: dropshadow(color=#ffffff, offx=0, offy=0);
+	-webkit-print-color-adjust: exact !important;
+}
+#container p.banner_title {
+    (-bracket-:hack;
+        color: #ffffff !important;
+    );
+}
+@media print and (-webkit-min-device-pixel-ratio:0) { 
+/* Safari and Chrome */
+#container div.banner_title_bkg div.trangle, #container div.banner_title_bkg_if div.trangle {
+    display: none;
+} 
+/* Safari only override */
+::i-block-chrome,#container div.banner_title_bkg div.trangle, #container div.banner_title_bkg_if div.trangle {
+    display: block;
+}}
+
+@media \\0 screen {
+Safari only 
+#container div.banner_title_bkg div.trangle, #container div.banner_title_bkg_if div.trangle {
+    display: block;
+}  
+}
+#container .hindawi_links a {
+	color: transparent !important;
+text-shadow:0px 0px 0px #ffffff !important;
+	filter: dropshadow(color=#ffffff, offx=0, offy=0) !important;
+	-webkit-print-color-adjust: exact !important;
+}
+
+.middle_content ul li, .feature_head ul li {
+    background-image: none;
+	position: relative;
+}
+.middle_content ul {
+    position:relative;
+}
+.middle_content ul li a:before {
+	content: url("../images/green_arrow.svg");
+	margin-left: -12px;
+	width: 12px;
+	height: 12px;
+	margin-top: -1px;
+	position:absolute;
+}
+#container .li_special li:before {
+	content: url("../images/green_arrow.svg");
+	margin-left: -12px;
+	margin-right: 6px;
+}
+#container .li_special li a:before, .journal_browse ul li a:before {
+	content: "";
+}
+#container #journal_navigation {
+background-image: none;
+}
+#journal_navigation div {
+    position: absolute;
+    top: 0;
+}
+#journal_navigation:before {
+	background-image: none;
+	content: url("../images/navigation_p.gif");
+}
+#journal_navigation a {
+	background-image: none;
+	color: white;
+}
+#journal_navigation a {
+	display: none;
+}
+.table_list {
+	float: left;
+}
+.xml-content .fig {
+	width: 998px;
+}
+.displayed-label {
+	display: block;
+	width: 948px;
+	text-align: center;
+}
+#site_head .logo object {
+	width:72px;
+	height:72px;
+}
+#footer {
+    height: 0px !important;
+    border-top: 6px solid #CCCCCC;
+}
+
+#topnav .abstract, #topnav .full_text_pdf, #topnav .full_text_xhtml, #topnav .how_to_cite, #topnav .forward_cite, #topnav .forward_cite, #topnav .linked_ref, #topnav .sup_materials, #topnav .erratum, #topnav .full_text_epub, #topnav .complete_s_i, #topnav .full_text_xml {
+	background-image: none !important;
+margin-left: 0px;
+margin-top: 3px;
+position: relative;
+}
+#topnav .abstract:before, #topnav .full_text_pdf:before, #topnav .full_text_xhtml:before, #topnav .how_to_cite:before, #topnav .forward_cite:before, #topnav .forward_cite:before, #topnav .linked_ref:before, #topnav .sup_materials:before, #topnav .erratum:before, #topnav .full_text_epub:before, #topnav .complete_s_i:before, #topnav .full_text_xml:before {
+	margin-left: -20px !important;
+	margin-top: 2px !important;
+}
+#topnav .abstract:before {
+	content: url('../images/actions_icon2.svg');
+}
+#topnav .full_text_pdf:before {
+	content: url('../images/actions_icon4.svg');
+}
+#topnav .full_text_xhtml:before {
+	content: url('../images/actions_icon8.svg');
+}
+#topnav .how_to_cite:before {
+	content: url('../images/actions_icon5.svg');
+}
+#topnav .forward_cite:before {
+	content: url('../images/actions_icon3.svg');
+}
+#topnav .linked_ref:before {
+	content: url('../images/actions_icon1.svg');
+}
+#topnav .sup_materials:before {
+	content: url('../images/actions_icon6.svg');
+}
+#topnav .erratum:before {
+	content: url('../images/actions_icon7.svg');
+}
+#topnav .full_text_epub:before {
+	content: url('../images/actions_icon9.svg');
+}
+#topnav .complete_s_i:before {
+	content: url('../images/actions_icon10.svg');
+}
+#topnav .full_text_xml:before {
+	content: url('../images/actions_icon11.svg');
+}

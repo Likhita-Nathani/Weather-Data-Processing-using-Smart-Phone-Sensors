@@ -1,0 +1,821 @@
+@charset "utf-8";
+/* version no. [v.2016.02.02.01.xml_display.css] 11:00 AM pre a break-all */
+/* version no. [v.2016.01.28.01.xml_display.css] 03:50 PM IE edge issues + inline svg */
+/* version no. [v.2016.01.13.01.xml_display.css] 04:10 PM .table */
+@font-face { 
+ font-family: 'XITSMath';
+ src: url('/fonts/xitsmath.ttf');
+ /*src: local("?"), url('/fonts/xitsmath.ttf') format('truetype');*/
+}
+/* Safari */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+	 font-family: 'XITSMath';
+	 src:url('http://files.hindawi.com/fonts/xitsmath.svg#xitsmath') format('svg');
+	}
+}
+/* Opera */
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+	 font-family: 'XITSMath';
+	 src:url("http://files.hindawi.com/fonts/xitsmath.ttf");
+	}
+}
+@font-face {
+    font-family: 'xits-math';
+    src: url('http://files.hindawi.com/fonts/xits-math.eot');
+    src: url('http://files.hindawi.com/fonts/xits-math.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*-- end -- */
+
+.middle_content pre {
+	padding: 0px;
+	text-align: left;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 18px; /*1.5em*/
+	margin-left: 0px;
+	font-family: 'Minion W08 Regular_1167271', Times;
+	font-size: 17px;
+}
+.middle_content pre a {
+	white-space: normal;
+	word-break: break-all;
+}
+.article_type {
+	color: #000000;
+	font-size: 18px;
+	font-family:'Minion W08 Bold';
+	margin-bottom: 0.4em;	 
+}
+.middle_content .author_gp {
+	text-align: left;
+	color: #000000;
+	padding: 0px;
+	margin: 12px 0px;
+	font-size: 17px;
+	line-height: 19px;
+	font-weight: normal;	
+	font-family:'Minion W08 Regular_1167271';
+}
+ 
+.icon_holder {
+    float: left;
+    height: 18px;
+    margin-left: 0;
+    margin-top: 4px;
+    width: 15px;
+}
+#container .xml-content p {
+	text-align: justify;
+}
+/*#container .xml-content p a {
+word-break: break-all;
+}*/
+.middle_content .secapp { /* check if orphaned */ /* not orphaned for two h4 */
+	border-bottom-width: 0px;
+	margin: 24px 0px -12px;/*2em 0px -1em*/
+}
+.xml-content h5, #container .xml-content h6 {
+	font-family:'Minion W08 Bold';
+	text-align: left;
+	padding: 0px;
+	margin: 0px 0px 12px 0px;/*0em 0em 1em 0em*/
+	color: #999999;
+	font-size: 17px;
+ 
+}
+.xml-content .fig {
+	border: 1px solid #CCCCCC;
+	background-color: #F5F5F5;
+	display: inline-block; /* block */
+	/*padding: 12px;*/ /* 12px Paul 03.08.2010 */
+	margin: 6px 0px 6px 0px; /*1.5em 0em*/ /* 18px 0px */
+ 	*margin: 12px 0px; /* for IE */
+	font-size: 17px;
+	/*width:682px;*/ /* 640px Paul 03.08.2010 */
+ 	/**width:auto;*/
+	width: /*\**/:676px\9;
+	font-family:'Minion W08 Regular_1167271',Times;
+	
+	width: 100%;
+	padding: 0px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.warning_1 .xml-content .fig {
+	opacity: 0.8;
+}
+#content .middle_content .xml-content .fig + h5, #content .middle_content .xml-content .fig + h6 {
+	margin: 18px 0px 12px 0px; /*1.5em 0em*/ /* 18px 0px */
+}
+.statement-content {
+	font-style: normal;
+}
+.xml-content .fig tr {
+	vertical-align: top;
+}
+.xml-content .fig img {
+	margin: 0px;
+	padding: 0px;
+	border-width: 0px;
+	display:inline;
+}
+.xml-content img {
+	margin: 0px 0px 0px 0px;/*0.3em 0 0.3em 0*//*4px 0px 4px 0px*/
+}
+.xml-content .fn-content { /* orphaned */
+	font-size:17px;
+	text-align:justify;
+	font-family:'Minion W08 Regular_1167271',Times;
+}
+.xml-content .abbr-def {
+	display:block;
+}
+.xml-content .def {
+	display:block;
+	float:left;
+}
+.xml-content hr {
+	height:1px;
+	color:#CCCCCC;
+	background-color:#CCCCCC;
+	border-top: 0px solid #CCCCCC;
+	border-right: 0px solid #CCCCCC;
+	border-bottom: 0px solid #CCCCCC;
+	border-left: 0px solid #CCCCCC;
+	margin:24px 0px;/*2em 0em*/
+	#margin:0px 0px 12px 0px;/*0em*/
+}
+span.equation {
+	text-align: center;
+	vertical-align: middle;
+	position: relative;
+	width: 100%;
+}
+.equation-line {
+	text-align: center;
+	display: block;
+	vertical-align: middle;
+	margin: 12px 0px;/*1em 0*/
+	position: relative;
+	width: 100%;
+}
+.equation .equation-line .displayed-label {
+	text-align: center;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+.inlineformula {
+ top:3px;
+ position:relative;
+}
+}
+.equation-label {
+	position: absolute;
+	bottom:45%;
+	right: 0px;
+ #right: 3px;
+	float:right;
+	font-style: normal;
+}
+.figgroupcaption {
+	float:left;
+	margin: 12px;
+	background-color: #0099CC;
+}
+.groupcaption {
+	text-align:justify;
+	margin-left:114px;
+	_margin-left:111px;
+	margin-top:-3px;
+/* #margin-top:-2px;*/
+	margin: 12px 12px 12px 126px;
+}
+
+a.thumbnail {
+	display: block;
+	border: 1px solid #CCCCCC;
+	background: #FFFFFF;
+	padding: 0px;
+	line-height:0px;
+	width:100px;
+}
+/* SVG thumb. */
+.figgroupcaption a {
+    position: relative;
+    z-index: 1;
+}
+.figgroupcaption span {
+    display: block;
+    /*position: relative;
+    z-index: -1;*/
+	width:100px;
+	height:auto;
+}
+.figgroupcaption object {
+    position: relative;
+    z-index: -1;
+	width: 100%;
+	max-width: 94px;
+	/*height: 100%;*/
+	padding: 3px;
+}
+/* end SVG thumb. */
+
+.xml-content math, .math {
+	font-family:'Minion W08 Regular_1167271',Times;
+}
+.xml-content mtable {
+	font-size:100%;
+}
+.xml-content mfrac, msqrt {
+	font-size:100%;
+}
+mstyle[displaystyle="true"] mo {
+	font-family:"Times New Roman", Times, serif;
+	font-size:16px;
+}
+mstyle[mathvariant="bold"] mi, mi[mathvariant="bold"], mstyle[mathvariant="bold"] mo, mstyle[mathvariant="bold"] mn {
+	font-family:'Minion W08 Bold';
+	font-style:normal;
+	font-size:17px;
+}
+mstyle[mathvariant="monospace"] mi {
+	font-style: normal;
+}
+mstyle[mathvariant="bold-italic"] mi, mstyle[mathvariant="italic"] mo {
+	font-family:'Minion W08 Bold';
+	font-style:italic;
+	font-size:17px;
+}
+mi[mathvariant="bold-italic"] {
+	font-family:'Minion W08 Bold';
+	font-style:normal;
+	font-size:17px;
+}
+mstyle[mathvariant="normal"] mi, mstyle[mathvariant="normal"] mrow mi {
+	font-style:normal;
+}
+munderover mrow mtable mtr mtd mrow {
+	margin-bottom:-2em;/*unknown font size*/
+}
+.xml-content .fig td {
+	font-size: 17px;
+	font-family:'Minion W08 Regular_1167271',Times;
+}
+.xml-content .fig b {
+	font-size: 17px;
+	font-family:'Minion W08 Bold';
+}
+.xml-content .ref-item {
+	margin: 0px;
+}
+/* Size of Operator*/
+mo[minsize="1em"] {
+	font-size:18px
+}
+mo[minsize="1.5em"] {
+	font-size:22px
+}
+mo[minsize="1.75em"] {
+	font-size:24px;
+}
+/* ---  New List CSS --- */
+.xml-content .list, .list {
+	display: table;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	position: relative;
+	text-align: justify;
+	*left:0px;
+	*display:block;
+	word-break: break-word;
+	width:100%;/*Fixing equations width inside list */
+}
+
+.xml-content .list .list, .list .list {
+	display: table;
+    margin-bottom: 0px;
+    margin-top: 0px;
+	position: relative;
+	text-align: justify;
+	#margin-left:18px;
+}
+.xml-content .list .list .list, .list .list .list {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.xml-content .list .list, 
+.xml-content .list .list .list {
+	#width: auto;
+	_width: auto;
+}
+.xml-content .list-item, .list-item {
+	display: table-row;
+	*display:block;
+}
+.xml-content .list-label, .list-label {
+
+	*display:inline-block;
+	display: table-cell;
+	font-family: 'Minion W08 Regular_1167271';
+	font-style: normal;
+	padding-left: 24px;
+	padding-right: 6px;
+	vertical-align: baseline;
+	white-space: nowrap;
+	width: 4%;
+}
+.xml-content .list-content, .list-content {
+	display: table-cell;
+	position: relative;
+	vertical-align: baseline;
+	*display:inline;
+}
+.xml-content .list-content .equation-line {
+	margin: 8px 0px;/*0.7em 0*/
+	float: left;
+}
+/* 2015.07.09 list beta3 */
+.list .list-item:last-child .equation:last-child {
+	margin-bottom: 0;
+}
+.list .list .list-item .equation:last-child {
+	margin-bottom: 12px;
+}
+.list .list .list-item:last-child .list-content .equation:last-child {
+	margin-bottom: 0px;
+}
+/* ---  End --- */
+.xml-content .statement {
+	display:block;
+	margin-top:10px;
+}
+.xml-content .statement br {
+	margin-bottom:10px;
+}
+.xml-content h4 img, .xml-content h5 img {
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+.xml-content .smallmatrix mtr mtd {
+	line-height:.5pt;
+	font-size:9.5px;
+	padding: 0px 0px 0px 0px;
+}
+.sub mtr mtd {
+	font-size:9.5px;
+	line-height:0.5pt;
+	padding: 0px 0px 0px 0px;
+}
+.gloss-abbr td {
+	vertical-align:top;
+}
+.gloss-abbr tr td:first-child {
+	vertical-align:top;
+/*	width:10%; mpe/2010/805195 gloss-abbr Nomenclature */
+	max-width:10%;
+	padding-right: 3px;
+}
+.double-underline {
+	border-bottom:double;
+}
+table.gloss-abbr {
+	font-size:17px !important;
+	font-family:'Minion W08 Regular_1167271',Times;
+}
+.xml-content math munder mrow:last-child {
+	font-size:12px
+}
+.xml-content ol {
+	margin-bottom:0px;
+	padding-left: 44px;
+}
+/*.xml-content ol, .xml-content ol li:last-child {
+	margin-bottom:0px;
+}*/
+.xml-content ol li {
+	text-align:justify;
+}
+span.sep {
+    color: #000000;
+    display: inline;
+    float: none;
+    font-size: 17px;
+    font-weight: normal;
+    height: 15px;
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: top;
+    width: auto;font-family:'Minion W08 Regular_1167271',Times;
+}
+/* for SVG fonts 28.09.2010 -- start --*/
+svg text {
+	font-family:'XITSMath';
+	font-style:normal;
+}
+.symbol {
+	font-family:'Minion W08 Regular_1167271',Times;
+}
+h4 svg, h5 svg, h6 svg {
+	fill:#999999;
+}
+.displayed-label {
+	display: block;
+	margin:12px 0px;
+	text-align: right;
+}
+ol.ref-list li.ref-item .displayed-label {
+	margin-left:-40px;
+}
+ol.notes .displayed-label {
+	margin-left: -44px;
+}
+.list-content .displayed-label {
+	/*margin-left:-48px;*/
+	margin-left: -77px;/*-60px*/
+}
+.list-content .list-content .displayed-label {
+	margin-left:-170px;/*-170px 06.09.2011 301205 not done */ /*108*//* -111px 15.04.2013 */
+}
+.list-content .list-content .list-content .displayed-label {
+	margin-left:-184px;
+}
+.svg-td {
+	white-space: nowrap; 
+	display: inline-block;
+}
+
+.displayed-label svg {
+    /*float: right;
+    margin-bottom: 12px;*/
+}
+.list .displayed-label svg {
+	float: right;
+	margin-bottom: 12px;
+}
+blockquote {
+	margin:0 36px;
+}
+ul.noliststyle li{
+	margin:0px;
+	padding-bottom:0px;
+	padding-left: 12px;
+	list-style-type: none;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: 0 0px;
+	background-image: none !important;
+	background-color:transparent;
+	list-style-image:none;
+	list-style:none;
+}
+i{font-family:'Minion W08 Italic' ;font-style: normal;}
+h1 i,h2 i,h4 i,h5 i,h6 i,h3 i{font-family:'Minion W08 Bold Italic';font-style: normal;}
+
+.displayeq-css {
+	font-family: 'xits-math';
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+.displayed-label {
+	font-family: 'xits-math';
+	display:block;	
+}
+.displayeq-css span {
+	font-family: 'xits-math';
+}
+h2 .displayeq-css {
+	line-height:30px;
+}
+
+#content .middle_content sup, #content .middle_content sub {
+	line-height: 0;
+	vertical-align: baseline;
+	position: relative;
+}
+#content .middle_content sup {
+	top: -5px
+}
+#content .middle_content sub {
+	top: 5px
+}
+span[style="font-family:monospace"], .monospace {
+	font-family: 'xitstexttt', Courier, monospace !important; /* to override inline-style */
+}
+/* responsive styles */
+@media only screen and (max-width: 564px) {
+/* navigation bar */
+#topnav {
+	display: block;
+	position: relative;
+}
+#topnav #navbtn {
+	display: none;
+	float: right;
+	top: 0;
+	width: 28px;
+	height: 23px;
+	background-image: url('../images/menu.svg');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	-webkit-background-size: 28px 23px;
+	-o-background-size: 28px 23px;
+	-moz-background-size: 28px 23px;
+	background-size: 28px 23px;
+	margin: 0px 0 12px 14px;
+}
+#topnav #navbtn:hover {
+	background-color: transparent;
+}
+#topnav #article_list {
+	position: absolute;
+	top: 0;
+}
+#topnav {
+	height: auto;
+	float: none;
+	width: 100%;
+	padding-left: 0;
+	padding-bottom: 0;
+	margin-top: 0px;
+}
+#topnav #article_list {
+	display: none;
+	position: static;
+	width: 100%;
+	top: auto;
+	right: auto;
+	padding-bottom: 12px;
+}
+#topnav #article_list ul li {
+	float: none;
+}
+#topnav #article_list ul li a {
+	display: block;
+	line-height: 24px;
+}
+#topnav #navbtn {
+	display: block;
+}
+#article_list li:first-child {
+margin: 0px;
+}
+}
+
+#topnav .abstract {
+	background: url('../images/actions_icon2.svg') no-repeat left center;
+}
+#topnav .full_text_pdf {
+	background: url('../images/actions_icon4.svg') no-repeat left center;
+}
+#topnav .full_text_xhtml {
+	background: url('../images/actions_icon8.svg') no-repeat left center;
+}
+#topnav .how_to_cite {
+	background: url('../images/actions_icon5.svg') no-repeat left center;
+}
+#topnav .forward_cite {
+	background: url('../images/actions_icon3.svg') no-repeat left center;
+}
+#topnav .linked_ref {
+	background: url('../images/actions_icon1.svg') no-repeat left center;
+}
+#topnav .sup_materials {
+	background: url('../images/actions_icon6.svg') no-repeat left center;
+}
+#topnav .erratum {
+	background: url('../images/actions_icon7.svg') no-repeat left center;
+}
+#topnav .full_text_epub {
+	background: url('../images/actions_icon9.svg') no-repeat left center;
+}
+#topnav .complete_s_i {
+	background: url('../images/actions_icon10.svg') no-repeat left center;
+}
+#topnav .full_text_xml {
+	background: url('../images/actions_icon11.svg') no-repeat left center;
+}
+/* articles actions menu end */
+
+/*svg styles*/
+.left, .right {
+    display: table-cell;
+    max-width: 100%;
+	width:auto;/*set width auto to label fox variable label width*/
+}
+.left {
+	max-width: 13%  ;
+	text-align: left;
+	width: 7%;
+	display: block !important;
+}
+ .middle {
+   display: table-cell;
+   padding: 0 12px;
+}
+.list-content .equation svg:first-child {
+	vertical-align: text-top !important;
+}
+.left svg, .middle svg {
+	vertical-align: text-top;
+}
+.right svg {
+	float: right;
+	max-width: 100%;
+	vertical-align: baseline;
+}
+.right {
+	vertical-align: middle;
+}
+span.equation  svg {
+	max-width: 100% !important;
+}
+
+.xml-content svg.contentdisp {
+    margin: 0 auto;
+    max-width: 100% !important;
+}
+span.equation {
+    width: 100%;
+	display:table!important;
+	margin: 12px 0;
+}
+@-moz-document url-prefix() { 
+	span.equation svg{
+	height: auto!important; 
+	width: auto !important; 
+}
+}
+ 
+@media \\0 screen {
+/* Safari only  */
+span.equation svg ,.left svg, .right svg, span.equation svg , .right {
+	max-height:none /*!important;*/
+}
+  
+}
+ 
+/***IE11 start***/
+
+@media all and (max-width: 576px){ 
+*::-ms-backdrop, .middle {
+    display: inline-block;
+    padding: 0 12px;
+    max-width: 77%;
+    width: auto; /*remove from small screens*/
+}
+*::-ms-backdrop, .left, .right {
+    max-width: 100%;
+    display: inline-block;
+}
+*::-ms-backdrop, .left {
+    max-width:5%;
+    text-align: left;
+    width: 5%;
+    display: block !important;
+    float: left;
+}
+/***IE11 end***/
+*::-ms-backdrop, .right {float: right;}
+
+ *::-ms-backdrop, span.equation svg {
+    max-width: 100% !important;
+}
+
+ *::-ms-backdrop, span.equation {
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    float: left;
+	display: inline-block !important;
+    margin: 12px 0;
+    overflow: hidden;
+}
+}
+
+@media (max-width: 25em), handheld { 
+span.equation svg, .left svg, .right svg, span.equation svg, .right {
+        height: auto;
+        width: auto;
+        max-height: 100%;
+    }
+    .alt_label {
+        width: auto;
+        height: auto;
+    }
+    .alt_equation {
+        width: auto;
+        height: auto;
+    }
+.equation svg,.equation_break svg{
+	width: auto !important; 
+	max-height: 100%!important; /* to fix space below SVG issue */
+}
+span.equation  span{height: 100%}
+.middle {padding: 12px}
+}
+
+/*equation-break start*/
+span.equation_break {
+    width: 100%;
+    display: table!important;
+    margin: 12px 0;
+}
+
+span.middle_break svg, .right_break svg {
+    max-height: 100%; /* to fix space below SVG issue */
+    max-width: 100% !important;
+}
+
+.middle_break {
+    display: table-cell;
+    padding: 0 12px;
+    position: relative;
+    text-align: center;
+    width: auto;
+}
+
+.left_break {
+    display: table-cell !important;
+    width: 4.5%;
+}
+
+.left_break svg {
+    display: none
+}
+
+.middle_break span {
+    display: inline-block;
+    position: relative;
+}
+
+.right_break {
+    vertical-align: top;
+    position: relative;
+    display: table-cell;
+}
+
+.right_break svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    max-width: 100%;
+}
+/***IE Edge start***/
+@supports (-ms-accelerator:true) {
+    .right_break svg {
+        position: relative !important
+    }
+    .middle_break span {
+        display: block;
+        margin: 0 auto
+    }
+    .alt_equation {
+        width: auto;
+        height: auto;
+    }
+    #container {
+        overflow-x: hidden
+    }
+}
+/***IE Edge end***/
+.alt_label {
+    position: relative !important;
+}
+
+_:-ms-input-placeholder, :root span.middle_break svg, _:-ms-input-placeholder, :root .right_break svg {
+    height: none!important;
+    width: none!important;
+    max-height: none!important;
+    max-width: none!important;
+}
+
+/* mpe/937872 */
+#content .xml-content table.table {
+    width: auto;
+    margin: 12px 0 12px 12px;
+}
+#content .xml-content table.table td {
+    padding-right: 24px;
+}
+
+/* General Align */
+#content .align_right {text-align: right;}
+#content .align_left {text-align: left;}
+#content .align_center {text-align: center;}
+#content .valign_top { vertical-align:top;}
+
+/***Inline SVG start***/
+p svg:not(:nth-child(1)), i svg, table svg, h4 svg, h5 svg, h6 svg, h1 svg, li svg, .list svg, .fig svg, .statement svg:not(:nth-child(1)), p> svg{max-width:100%}
+/***Inline SVG end***/
